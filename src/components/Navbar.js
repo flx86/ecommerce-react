@@ -32,13 +32,10 @@ const NavigationLinks = styled.ul`
 
 const Link = styled.li`
   font-size: 1.8rem;
+  color: var(--clr-black);
+  margin: 0 1rem;
+  cursor: pointer;
   transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  a {
-    text-decoration: none;
-    color: var(--clr-black);
-    margin: 0 1rem;
-  }
 
   &:hover {
     transform: translateY(-3px);
@@ -55,15 +52,9 @@ const Navbar = () => {
       <NavbarContainer>
         <LogoContainer>Computers</LogoContainer>
         <NavigationLinks>
-          <Link>
-            <a href="#">About</a>
-          </Link>
-          <Link>
-            <a href="#">Stores</a>
-          </Link>
-          <Link>
-            <a href="#">Contact</a>
-          </Link>
+          <Link>About</Link>
+          <Link>Stores</Link>
+          <Link>Contact</Link>
         </NavigationLinks>
       </NavbarContainer>
     </NavbarStyled>
