@@ -11,6 +11,10 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  img{
+    width:100%;
+  }
+
   *,
   *::before,
   *::after {
@@ -20,7 +24,7 @@ export default createGlobalStyle`
   }
 
   html{
-    font-size:16 px;
+    font-size: 62.5%; //1rem = 10px
     box-sizing: border-box;
     --clr-white: ${props => props.theme.colors.white};
     --clr-red: ${props => props.theme.colors.red};

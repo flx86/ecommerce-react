@@ -7,7 +7,7 @@ const StyledButton = styled.button`
   background: white;
   padding: 0.2em 1.1em;
   text-transform: uppercase;
-  font-size: 2.1rem;
+  font-size: 3.1rem;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -19,6 +19,10 @@ const StyledButton = styled.button`
   &:hover {
     color: var(--clr-white);
     background: var(--clr-red);
+  }
+
+  &:active {
+    transform: translateY(3px);
   }
 `;
 

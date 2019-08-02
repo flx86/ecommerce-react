@@ -8,7 +8,7 @@ import HeroBackground from "../svg/Hero.svg";
 import Button from "./Button";
 
 const HeroContainer = styled.div`
-  height: 90vh;
+  height: 600px;
   background: var(--clr-background);
   position: relative;
 `;
@@ -37,23 +37,41 @@ const LaptopGirlContainer = styled.div`
   position: absolute;
   bottom: -10%;
   left: -2%;
+  width: 35%;
+  height: auto;
+
+  @media ${props => props.theme.mediaQueries.laptop} {
+    display: none;
+  }
 `;
 
 const TextContainer = styled.div`
+  max-width: 680px;
   position: absolute;
-  max-width: 700px;
-  top: 15%;
-  left: 40%;
+  top: 20%;
+  left: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.2;
+
+  @media ${props => props.theme.mediaQueries.laptop} {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 `;
 
 const BigText = styled.h1`
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 4.5rem;
+  font-size: 7.2rem;
   margin-bottom: 0.5em;
+
+  /* @media ${props => props.theme.mediaQueries.laptop} {
+    max-width
+  } */
 `;
 
 const Hero = () => {
