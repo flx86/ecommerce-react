@@ -35,7 +35,7 @@ const Link = styled.li`
   color: var(--clr-black);
   margin: 0 1rem;
   cursor: pointer;
-  transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &:hover {
     transform: translateY(-3px);
